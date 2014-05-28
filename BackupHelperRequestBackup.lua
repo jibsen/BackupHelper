@@ -18,6 +18,7 @@
 
 -- Lightroom SDK imports
 local LrApplication = import 'LrApplication'
+local LrDialogs = import 'LrDialogs'
 
 -- Support for debug logging
 -- Note: Comment in the first block below to enable debug logging, and the
@@ -45,10 +46,16 @@ end
 
 logPrint('=== Loading BackupHelperRequestBackup.lua ===')
 
-local function requestBackup()
-	logPrint('[ Entering requestBackup() ]')
+local function requestCatalogBackup()
+	logPrint('[ Entering requestCatalogBackup() ]')
 
 	LrApplication.backupAtNextShutdown(_PLUGIN.id)
+
+	LrDialogs.message(
+		LOC '$$$/BackupHelper/General/PluginName=Backup Helper',
+		LOC '$$$/BackupHelper/General/BackupRequested=Catalog backup will run next time Lightroom exits.',
+		'info'
+	)
 end
 
-requestBackup()
+requestCatalogBackup()

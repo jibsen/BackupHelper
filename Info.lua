@@ -26,10 +26,10 @@ return {
 	
 	LrLibraryMenuItems = {
 		{
-			title = LOC '$$$/BackupHelper/General/BackupOnExit=Backup when Lightroom next exits',
+			title = LOC '$$$/BackupHelper/General/BackupOnExit=Backup catalog when Lightroom next exits',
 			file = 'BackupHelperRequestBackup.lua',
 		},
 	},
 
-	VERSION = { major=0, minor=1, revision=0, build=0, },
+	VERSION = { major=0, minor=1, revision=1, build=0, },
 }
