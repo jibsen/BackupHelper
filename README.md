@@ -10,8 +10,8 @@ Copyright 2014 Joergen Ibsen
 About
 -----
 
-BackupHelper is a [Lightroom][] plug-in that requests a catalog backup next
-time Lightroom exits.
+BackupHelper is a [Lightroom][] plug-in that adds a menu item to request a
+catalog backup next time Lightroom exits.
 
 You can do this manually by opening the Catalog Settings, and choose the
 appropriate item in the Backup popup of the General tab. This plug-in is
